@@ -1,3 +1,13 @@
+<#
+.NOTES
+
+.SYNOPSIS
+	Match VHD size to Managed Disk SKU size
+
+.DESCRIPTION
+    during the migration from storage account to managed disks the new MD SKU will be selected by
+    rounding up to the next MD SKU. 
+#>
 function closesmatch ($closesmatch_input) {
     $diff = [math]::abs($closesmatch_input - $mdSkuCost[0])
     $min_index = 0

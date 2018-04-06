@@ -1,3 +1,14 @@
+<#
+.NOTES
+
+.SYNOPSIS
+	Collect VHD sizes from Azure Storage Accounts
+
+.DESCRIPTION
+    This script will search all storage accounts for a VHD container and then report
+    on the size of all blobs in the container.
+#>
+
 $results = @()
 
 # Loop through storage accounts and collect blob data
