@@ -11,7 +11,6 @@
 	PARTICULAR PURPOSE.
 
 .SYNOPSIS
-
 	script to correct Exchange 2010 OWA / ECP Virtual Directory Authentication
 	settings to enable silent cross-site redirect.
 #>
